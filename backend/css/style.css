@@ -41,6 +41,13 @@
         padding: 0;
     }
     
+    #amazon {
+        display: block;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    
     .facebook {
         padding-left: 2px;
     }

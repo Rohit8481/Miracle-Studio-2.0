@@ -6,14 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        [data-component="slideshow"] .slide {
-            display: none;
-            text-align: center;
-        }
-        
-        [data-component="slideshow"] .slide.active {
-            display: block;
-        }
+
     </style>
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -23,6 +16,11 @@
 <title>MIRACLE STUDIO 2.0</title>
 
 <BODY>
+
+    <div class="loader disppear">
+        <img class="loaderImage" src="logo.png">
+    </div>
+
     <header class="text-gray-700 body-font">
         <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
             <a href="index.html" class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
@@ -285,27 +283,6 @@
 
     <script src="js/pre.js"></script>
     <script>
-        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-        slideshows.forEach(initSlideShow);
-
-        function initSlideShow(slideshow) {
-
-            var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-
-            var index = 0,
-                time = 4000;
-            slides[index].classList.add('active');
-
-            setInterval(() => {
-                slides[index].classList.remove('active');
-
-                index++;
-                if (index === slides.length) index = 0;
-
-                slides[index].classList.add('active');
-
-            }, time);
-        }
     </script>
 
 

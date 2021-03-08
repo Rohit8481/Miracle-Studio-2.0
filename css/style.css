@@ -2,6 +2,7 @@
         margin: 0;
         padding: 0;
     }
+    /* Loader image css */
     
     .loaderImage {
         height: auto;
@@ -30,6 +31,17 @@
             visibility: hidden;
         }
     }
+    /* home page slide show view loader */
+    
+    [data-component="slideshow"] .slide {
+        display: none;
+        text-align: center;
+    }
+    
+    [data-component="slideshow"] .slide.active {
+        display: block;
+    }
+    /* Some more css for graphics improvement */
     
     .float-container {
         align-content: center;
@@ -37,23 +49,7 @@
     
     .float-child {
         width: 50%;
-        float: right;
-        padding: 0;
-    }
-    
-    #amazon {
-        display: block;
-        margin: auto;
-        height: auto;
-        width: auto;
-    }
-    
-    .facebook {
-        padding-left: 2px;
-    }
-    
-    .google {
-        padding-right: 2px;
+        float: left;
     }
     
     .login {
@@ -65,4 +61,10 @@
         margin: auto;
         padding-top: 1%;
         padding-bottom: 1%;
+    }
+    
+    .centre {
+        display: block;
+        margin: auto;
+        width: 20%;
     }

@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* home page slide show view loader */
-        
-        [data-component="slideshow"] .slide {
-            display: none;
-            text-align: center;
-        }
-        
-        [data-component="slideshow"] .slide.active {
-            display: block;
-        }
+
     </style>
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -292,29 +283,6 @@
 
     <script src="js/pre.js"></script>
     <script>
-        // slideshow loader js 
-
-        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-        slideshows.forEach(initSlideShow);
-
-        function initSlideShow(slideshow) {
-
-            var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-
-            var index = 0,
-                time = 4000;
-            slides[index].classList.add('active');
-
-            setInterval(() => {
-                slides[index].classList.remove('active');
-
-                index++;
-                if (index === slides.length) index = 0;
-
-                slides[index].classList.add('active');
-
-            }, time);
-        }
     </script>
 
 

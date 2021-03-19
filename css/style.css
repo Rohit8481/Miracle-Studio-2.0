@@ -19,6 +19,16 @@
     .disppear {
         animation: vanish 1s forwards;
     }
+    /* home page slide show view loader */
+    
+    [data-component="slideshow"] .slide {
+        display: none;
+        text-align: center;
+    }
+    
+    [data-component="slideshow"] .slide.active {
+        display: block;
+    }
     
     @keyframes vanish {
         100% {

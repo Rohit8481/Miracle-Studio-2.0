@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+<title>MIRACLE STUDIO 2.0</title>
+
+<BODY>
+    <div class="loader disppear">
+        <img class="loaderImage" src="logo.png">
+    </div>
+    <header class="text-gray-700 body-font">
+        <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
+            <a href="index.html" class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
+                <img src="logo.png" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-20 h-20" viewBox="0 0 24 24">
+                <span class="ml-3 text-xl">MIRACLE STUDIO 2.0</span>
+            </a>
+            <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
+                <a href="index.html" class="mr-5 hover:text-gray-900">HOME</a>
+                <a href="service.html" class="mr-5 hover:text-gray-900">SERVICE</a>
+                <a href="about.html" class="mr-5 hover:text-gray-900">ABOUT</a>
+                <a href="contact.html" class="mr-5 hover:text-gray-900">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-gray-700 body-font">
+        <span id="login_div">
+            <div class="container flex flex-wrap items-center px-5 py-24 mx-auto">
+              <div class="pr-0 lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0">
+                <h1 class="text-3xl font-medium text-gray-900 title-font">REGISTER YOURSELF TO BE A SPECIAL MEMBER OF OUR STUDIOS TO GET SPECIAL DEALS OR LOGIN TO AN EXISTING ACCOUNT.</h1>
+               
+              </div>
+              <div class="flex flex-col w-full p-8 mt-10 bg-gray-200 rounded-lg lg:w-2/6 md:w-1/2 md:ml-auto md:mt-0">
+                <h2 class="mb-5 text-lg font-medium text-gray-900 title-font">SIGN UP or LOGIN</h2>
+                <input id="email_field" class="px-4 py-2 mb-4 text-base bg-white border border-gray-400 rounded focus:outline-none focus:border-indigo-500" placeholder="Email" type="email"/>
+                <input id="password_field" class="px-4 py-2 mb-4 text-base bg-white border border-gray-400 rounded focus:outline-none focus:border-indigo-500" placeholder="Password" type="password"/>
+                <button class="px-8 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600" onclick="signup()">SIGNUP</button>
+              <br>
+                <button class="px-8 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600" onclick="login()">LOGIN</button>
+                
+                <p class="ortext">or</p>
+                <div class="float-container">
+
+                    <div class="float-child">
+                      <div class="facebook"><button class="facebook" onclick="loginFacebook()"><img class="centre" src="serv/facebook.png" alt="facebook"> </button></div>
+                    </div>
+                    
+                    <div class="float-child">
+                      <div class="google"><button class="google" onclick="loginGoogle()"><img class="centre" src="serv/google.png" alt="google"> </button>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+               
+                
+                
+          <p class="mt-3 text-xs text-gray-500">By registering with us or doing shooping with us you agree to our <a href="t&c.html">T & C.</a></p>
+              </div>
+            </div>
+          </span>
+    </section>
+
+
+
+    <section class="text-gray-700 body-font">
+        <div id="user_div" class="container flex flex-wrap items-center px-5 py-24 mx-auto">
+
+
+            <div class="pr-0 lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0">
+                <h1 class="text-3xl font-medium text-gray-900 title-font">THANKYOU FOR BEING A SPECIAL MEMBER AND A PART OF OUR COMMUNITY.</h1>
+            </div>
+
+
+            <div class="flex flex-col w-full p-8 mt-10 bg-gray-200 rounded-lg lg:w-2/6 md:w-1/2 md:ml-auto md:mt-0 ">
+                <p id="user_para"></p>
+                <br>
+                <button class="px-8 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600 " type="button " onclick="logout()">SIGN OUT</button>
+                <p class="mt-3 text-xs text-gray-500">By registering with us or doing shooping with us you agree to our <a href="t&c.html">T & C.</a></p>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+
+    <footer class="text-gray-700 body-font">
+        <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+                    <img src="logo.png" class="w-10 h-10" viewBox="0 0 24 24">
+
+                    <span class="ml-3 text-xl">MIRACLE STUDIO 2.0</span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">Music Is Life</p>
+            </div>
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <a href="index.html">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">HOME</h2>
+                    </a>
+                    <nav class="mb-10 list-none">
+                        <li>
+                            <a href="about.html" class="text-gray-600 hover:text-gray-800 ">About</a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="text-gray-600 hover:text-gray-800">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="t&c.html" class="text-gray-600 hover:text-gray-800 ">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="privacypolicy.html" class="text-gray-600 hover:text-gray-800 ">Privacy Policies</a>
+                        </li>
+                        <li>
+                            <a href="refundpolicy.html" class="text-gray-600 hover:text-gray-800 ">Refund Policy</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <a href="service.html">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">SERVICES</h2>
+                    </a>
+                    <nav class="mb-10 list-none">
+                        <li>
+                            <a href="service.html#mixing" class="text-gray-600 hover:text-gray-800">Mixing & Mastering</a>
+                        </li>
+                        <li>
+                            <a href="service.html#cinema" class="text-gray-600 hover:text-gray-800 ">Cinematography</a>
+                        </li>
+                        <li>
+                            <a href="service.html#video" class="text-gray-600 hover:text-gray-800 ">Video Editing</a>
+                        </li>
+                        <li>
+                            <a href="service.html#web" class="text-gray-600 hover:text-gray-800 ">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="service.html#android" class="text-gray-600 hover:text-gray-800 ">Android App Making</a>
+                        </li>
+                        <li>
+                            <a href="service.html#logo" class="text-gray-600 hover:text-gray-800 ">Logo Designing</a>
+                        </li>
+                        <li>
+                            <a href="service.html#banner" class="text-gray-600 hover:text-gray-800 ">Thumbnail & Banner Designing</a>
+                        </li>
+                        <li>
+                            <a href="service.html#add" class="text-gray-600 hover:text-gray-800 ">Advertisement Video</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2 ">
+                    <a href="contact.html">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font ">CONTACT</h2>
+                    </a>
+                    <nav class="mb-10 list-none ">
+                        <li>
+                            <a href="https://www.facebook.com/miraclestudio2.0" class="text-gray-600 hover:text-gray-800">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/singerrohit90/" class="text-gray-600 hover:text-gray-800 ">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Kumar90Rohit" class="text-gray-600 hover:text-gray-800 ">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCeVd5-QcYAD8mr_5SVKiv9g?view_as=subscriber" class="text-gray-600 hover:text-gray-800 ">Youtube</a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=singerrohit02@gmail.com&tf=1" class="text-gray-600 hover:text-gray-800 ">E-mail us</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/t6tDz8C" class="text-gray-600 hover:text-gray-800 ">Discord</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2 ">
+                    <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font ">THE PERFECT SOLUTION FOR YOU TO MAKE YOUR BUSSINESS DIGITAL.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-200 ">
+            <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row ">
+                <p class="text-sm text-center text-gray-500 sm:text-left ">Copyright © 2020 | Miracle Studio 2.0 —
+                    <a href="https://www.youtube.com/c/thesilentsingerproduction " rel="noopener noreferrer " class="ml-1 text-gray-600 " target="_blank ">Powered by The Silent Singer Production</a>
+                </p>
+                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start ">
+            <a href="https://www.facebook.com/miraclestudio2.0"class="text-gray-500 ">
+              <svg fill="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " class="w-5 h-5 " viewBox="0 0 24 24 ">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z "></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/Kumar90Rohit" class="ml-3 text-gray-500 ">
+              <svg fill="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " class="w-5 h-5 " viewBox="0 0 24 24 ">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z "></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/singerrohit90/" class="ml-3 text-gray-500 ">
+              <svg fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " class="w-5 h-5 " viewBox="0 0 24 24 ">
+                <rect width="20 " height="20 " x="2 " y="2 " rx="5 " ry="5 "></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01 "></path>
+              </svg>
+            </a>
+           
+          </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/pre.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBFlyD0knqoArOvCZt8KRs_qsTz-S7nvRI",
+            authDomain: "miracle-studio-2.firebaseapp.com",
+            databaseURL: "https://miracle-studio-2.firebaseio.com",
+            projectId: "miracle-studio-2",
+            storageBucket: "miracle-studio-2.appspot.com",
+            messagingSenderId: "599190618944",
+            appId: "1:599190618944:web:f6ed35cea872c9afb230a5",
+            measurementId: "G-Z7LG0N60HQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script type="text/javascript" src="js/signup.js"></script>
+
+
+</BODY>
+
+</html>
